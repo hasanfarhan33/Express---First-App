@@ -58,7 +58,7 @@ app.get("/search", (req, res) => {
   //   console.log(req.query);
   const { q } = req.query;
   if (!q) {
-    res.send("NOTHIG FOUND IF NOTHING SEARCHED");
+    res.send("NOTHING FOUND IF NOTHING SEARCHED");
   }
   res.send(`<h1>Searched for ${q}</h1>`);
   res.send("Hello");
